@@ -1,0 +1,2 @@
+# tsTest
+typescript初识
