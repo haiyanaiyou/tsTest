@@ -6,33 +6,27 @@ Any类型
 2.改变现有代码时，任意值允许在编译时可选择地包含或移除类型检查
 3.定义存储各种类型数据的数组时
 */
-let x:any = 4;
+var x = 4;
 x = 'T';
 x = false;
 console.log(x);
-
-let y:any = 4;
+var y = 4;
 y.toFixed();
-
-let arr:any[] = [1,false, '12'];
+var arr = [1, false, '12'];
 arr[1] = 100;
-
 /*
 null和undefined
 在ts中实行严格的空校验特性，就可以使得null和undefined只能被赋值给void或本身对应的类型
 */
-let z:number | null | undefined;
+var z;
 z = 1;
 z = null;
 z = undefined;
-
-/* 
+/*
 never类型
 是其他类型的子类型，代表从不会出现的值
 在函数中 通常表现为抛出异常或无法执行到终止点（例如无限循环）
 */
-let a:never;
-let b:number;
-
-
-a = (()=>{throw new Error('exception')})();
+var a;
+var b;
+a = (function () { throw new Error('exception'); })();
