@@ -30,3 +30,16 @@ never类型
 var a;
 var b;
 a = (function () { throw new Error('exception'); })();
+// 布尔值 
+var isDone = true;
+// 数字
+var decLiteral = 9;
+// 字符串
+var lname = 'bob';
+// 数组
+var list = [1, 2, 3];
+var list2 = [1, 1, 1];
+// 元祖Tuple(表示一个已知元素数量和类型的数组，各元素的类型不必相同)
+var yx;
+yx = ['hello', 11];
+console.log(yx[0].substr(1));

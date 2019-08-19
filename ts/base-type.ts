@@ -36,3 +36,21 @@ let b:number;
 
 
 a = (()=>{throw new Error('exception')})();
+
+// 布尔值 
+let isDone :boolean = true;
+
+// 数字
+let decLiteral :number = 9;
+
+// 字符串
+let lname:string = 'bob';
+
+// 数组
+let list: number[] = [1,2,3];
+let list2: Array<number> = [1,1,1];
+
+// 元祖Tuple(表示一个已知元素数量和类型的数组，各元素的类型不必相同)
+let yx: [string, number];
+yx = ['hello', 11];
+console.log(yx[0].substr(1))
